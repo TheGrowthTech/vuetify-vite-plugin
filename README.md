@@ -1,4 +1,4 @@
-# vite-plugin-vuetify4
+# vuetify-vite-plugin
 
 > Vite plugin for **Vuetify 4** — tree-shaking auto-import, CSS/SASS/configFile
 > style strategies, and Labs support. **Zero dependency on `@vuetify/loader-shared`
@@ -26,7 +26,7 @@ exclusively.
 ## Installation
 
 ```bash
-npm install -D vite-plugin-vuetify4
+npm install -D vuetify-vite-plugin
 ```
 
 ---
@@ -39,7 +39,7 @@ npm install -D vite-plugin-vuetify4
 // vite.config.ts
 import { defineConfig }  from 'vite'
 import vue               from '@vitejs/plugin-vue'
-import vuetify           from 'vite-plugin-vuetify4'
+import vuetify           from 'vuetify-vite-plugin'
 
 export default defineConfig({
   plugins: [
@@ -70,7 +70,7 @@ When used inside a **Nuxt module**, call `addVitePlugin` in your module's
 
 ```ts
 import { defineNuxtModule, addVitePlugin } from '@nuxt/kit'
-import vuetify from 'vite-plugin-vuetify4'
+import vuetify from 'vuetify-vite-plugin'
 
 export default defineNuxtModule({
   setup (options, nuxt) {
@@ -87,7 +87,7 @@ export default defineNuxtModule({
 
 ```ts
 vuetify({
-  autoImport?: boolean | {
+  autoImport?: boolean | { 
     labs?:   boolean                                      // include labs components
     ignore?: (keyof Components | keyof Directives)[]     // skip specific names
   },
@@ -140,7 +140,7 @@ vuetify({
 ### `transformAssetUrls`
 
 ```ts
-import vuetify from 'vite-plugin-vuetify4'
+import vuetify from 'vuetify-vite-plugin'
 
 // Pass to @vitejs/plugin-vue so Vuetify image props are processed by Vite
 vue({ template: { transformAssetUrls: vuetify.transformAssetUrls } })
@@ -165,7 +165,7 @@ import vuetify, {
 
   // Asset URL map
   transformAssetUrls,
-} from 'vite-plugin-vuetify4'
+} from 'vuetify-vite-plugin'
 
 // Types
 import type {
@@ -174,7 +174,7 @@ import type {
   StylesOption,
   StylesConfigFile,
   ResolvedOptions,
-} from 'vite-plugin-vuetify4'
+} from 'vuetify-vite-plugin'
 ```
 
 ---
@@ -211,8 +211,8 @@ source in a virtual module prefixed with your settings `@use`.
 
 ## Comparison with `vite-plugin-vuetify`
 
-| Feature                       | `vite-plugin-vuetify` (official) | `vite-plugin-vuetify4` |
-| ----------------------------- | -------------------------------- | ---------------------- |
+| Feature                       | `vite-plugin-vuetify` (official) | `vuetify-vite-plugin` |
+| ----------------------------- | -------------------------------- |-----------------------|
 | Vuetify 4 compatible          | ❌ (issue #352)                  | ✅                     |
 | `@vuetify/loader-shared` dep  | ✅ required                      | ❌ none                |
 | Auto-import + tree-shaking    | ✅                               | ✅                     |
