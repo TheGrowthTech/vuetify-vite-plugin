@@ -53,7 +53,7 @@
   "homepage": "https://github.com/thegrowthtech/vuetify-vite-plugin#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thegrowthtech/vuetify-vite-plugin.git"
+    "url": "git+https://github.com/thegrowthtech/vuetify-vite-plugin.git"
   },
   "bugs": {
     "url": "https://github.com/thegrowthtech/vuetify-vite-plugin/issues"
