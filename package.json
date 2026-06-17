@@ -1,6 +1,6 @@
 {
   "name": "vuetify-vite-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vite plugin for Vuetify 4 — tree-shaking auto-import, styles, and labs. No legacy loader-shared dependency.",
   "type": "module",
   "main": "./dist/index.cjs",
