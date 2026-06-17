@@ -49,6 +49,14 @@
     "tree-shaking",
     "auto-import"
   ],
+  "homepage": "https://github.com/thegrowthtech/vuetify-vite-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thegrowthtech/vuetify-vite-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thegrowthtech/vuetify-vite-plugin/issues"
+  },
   "license": "MIT",
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
