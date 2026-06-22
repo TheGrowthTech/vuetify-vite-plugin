@@ -37,7 +37,7 @@ export function importPlugin (options: ResolvedOptions): Plugin {
 
       if (vueIdx === -1) {
         config.logger.warn(
-          '[vite-plugin-vuetify4] No Vue plugin found — ' +
+          '[vuetify-vite-plugin] No Vue plugin found — ' +
           'auto-import is a no-op. Add @vitejs/plugin-vue ' +
           '(Nuxt provides this automatically).'
         )
@@ -46,7 +46,7 @@ export function importPlugin (options: ResolvedOptions): Plugin {
 
       if (selfIdx !== -1 && selfIdx < vueIdx) {
         throw new Error(
-          '[vite-plugin-vuetify4] This plugin must be registered AFTER the Vue plugin. ' +
+          '[vuetify-vite-plugin] This plugin must be registered AFTER the Vue plugin. ' +
           'Move it below `vue()` in your plugins array.'
         )
       }

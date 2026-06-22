@@ -51,7 +51,7 @@ export const transformAssetUrls = _transformAssetUrls
 // ─── Main plugin factory ──────────────────────────────────────────────────────
 
 /**
- * `vite-plugin-vuetify4`
+ * `vuetify-vite-plugin`
  *
  * Drop-in Vite plugin for Vuetify 4 with:
  * - Tree-shaking auto-import (no `@vuetify/loader-shared` dependency)
@@ -64,7 +64,7 @@ export const transformAssetUrls = _transformAssetUrls
  * // vite.config.ts
  * import { defineConfig } from 'vite'
  * import vue from '@vitejs/plugin-vue'
- * import vuetify from 'vite-plugin-vuetify4'
+ * import vuetify from 'vuetify-vite-plugin'
  *
  * export default defineConfig({
  *   plugins: [
